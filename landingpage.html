@@ -1,341 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
-    <link  href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-   <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing page</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root {
+      --theme-color: #b99ce2;
+    }
 
-        :root{
-            --theme-color:#b99ce2;
-        }
-      body,  h1,h2,h3,h4,h5,h6{
-            margin: 0;
-        }
-header{
-    height: 70vh;
-    margin: 0;
-    border: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url('https://wallpapers.com/images/featured/landscape-293chzhp3r67ag4a.jpg');
-    background-size: contain;
-    background-position: bottom;
-}
-    body{
-        margin: 0;
-        height: 60vh;
-       border: red;
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
     }
-    .header-content{
-      
-       color: rgb(204, 204, 226);
+
+    header {
+      height: 70vh;
+      margin: 0;
+      border: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: url('https://wallpapers.com/images/featured/landscape-293chzhp3r67ag4a.jpg');
+      background-size: contain;
+      background-position: bottom;
     }
-    .header-title{
-        font-size: 50px;
+
+    body {
+      margin: 0;
+      height: 60vh;
+      border: red;
     }
-    .btn{
-        border: none;
-        padding: 10px 20px;
-        border-radius: 20px;
-       
+
+    .header-content {
+
+      color: rgb(204, 204, 226);
     }
-    .btn-main{
-    background-color:var(--theme-color) ;
-    color: white;
+
+    .header-title {
+      font-size: 50px;
+    }
+
+    .btn {
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
 
     }
-    .btn-outline{
-        color: var(--theme-color)
+
+    .btn-main {
+      background-color: var(--theme-color);
+      color: white;
+
+    }
+
+    .btn-outline {
+      color: var(--theme-color)
+    }
+
+    .section {
+      padding: 5% 10%;
+    }
+
+    .section-title {
+      font-size: 40px;
+    }
+
+    .section-subtitle {
+      font-size: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 30px;
+    }
+
+    .card {
+
+      text-align: center;
+      padding: 50px 30px;
+      border-radius: 10px;
+      color: #822582;
+      transition-duration: 0.3s;
+
+    }
+
+    .card * {
+      margin-bottom: 20px;
+
+    }
+
+    .card:hover {
+      counter-reset: white;
+      background-color: var(--theme-color);
+      box-shadow: 2px 2px 5px 0 var(--theme-color);
+      border: 1px solid var(--theme-color);
+      transform: translate(-10px);
 
 
     }
-    .section{
-        padding: 5% 10%;
-    }
-    .section-title{
-        font-size: 40px;
-    }
-    
-    .section-subtitle{
-        font-size: 20px;
-    }
-    .card-container{
-        display: flex;
-        gap: 30px;
-    }
-   .card{
-   
-    text-align: center;
-    padding: 50px 30px;
-    border-radius: 10px;
-    color:#822582;
-    transition-duration: 0.3s;
 
-   }
-   .card *{
-    margin-bottom: 20px;
-   
-   }
-   .card:hover{
-    counter-reset: white;
-    background-color: var(--theme-color);
-    box-shadow: 2px 2px 5px  0 var(--theme-color);
-    border: 1px solid var(--theme-color);
-    transform: translate(-10px);
-    
-    
-   }
-   .card3{
-    font-size: 30px;
-   }
-   .footer{
-    line-height: 1.5;
-    font-family: Roboto;
-    background-color:  #000000;
-    margin: 0;
-    padding: 70px 0;
-    box-sizing: border-box;
-   }
-   .container{
-    max-width: 1170px;
-    
-   
-    margin: auto;
-    ul{
+    .card3 {
+      font-size: 30px;
+    }
+
+    .footer {
+      line-height: 1.5;
+      font-family: Roboto;
+      background-color: #000000;
+      margin: 0;
+      padding: 70px 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1170px;
+
+
+      margin: auto;
+
+      ul {
         list-style: none;
+      }
     }
-   }
-   .row{
-    display: flex;
-    flex-wrap: wrap;
-    
-   }
-   .footer-col{
-    width: 22%;
-    padding: 0 15px;
-   }
-  .footer-col h4{
-    font-size: 18px;
-    color:#822582;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 500;
-    position: relative;
-  }
-  .footer-col h4::before{
-   position: relative;
-   left: 0;
-   bottom: -10px;
-   background-color: #822582;
-   height: 2px;
-   box-sizing: border-box;
-   width: 50px;
 
-  }
-  .footer-col ul li:not(:last-child){
-   margin-bottom: 10px;
-  }
-  .footer-col ul li a{
-     font-size: 16px;
-     text-transform: capitalize;
-     color: #822582;
-     text-decoration: none;
-     font-weight: 300;
-     display: block;
-     color: #822582;
-  }
-  .footer-col .social-link a{
-    display: inline block;
-    height: 40px;
-    width: 40px;
-    background-color: #822582;
-    text-align: center;
-    line-height: 40px;
-    margin: o 10px 10px 0;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
 
-  }
-  .service{
-    /*border:2px solid darkgreen ;*/
-    display: grid;
-    margin: 30px;
-   
+    }
 
-  }
-  .service-image{
-   /* border: 2px solid crimson;/*
+    .footer-col {
+      width: 22%;
+      padding: 0 15px;
+    }
+
+    .footer-col h4 {
+      font-size: 18px;
+      color: #822582;
+      text-transform: capitalize;
+      margin-bottom: 30px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .footer-col h4::before {
+      position: relative;
+      left: 0;
+      bottom: -10px;
+      background-color: #822582;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+
+    }
+
+    .footer-col ul li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #822582;
+      text-decoration: none;
+      font-weight: 300;
+      display: block;
+      color: #822582;
+    }
+
+    .footer-col .social-link a {
+      display: inline block;
+      height: 40px;
+      width: 40px;
+      background-color: #822582;
+      text-align: center;
+      line-height: 40px;
+      margin: o 10px 10px 0;
+
+    }
+
+    .service {
+      /*border:2px solid darkgreen ;*/
+      display: grid;
+      margin: 30px;
+      border: 2px solid;
+    }
+
+    .service-image {
+      /* border: 2px solid crimson;/*
 
   }
   .service-content{
    /* border: 2px solid navy;*/
-    padding: 30px
-  }
-  .service-content h1{
-    font-size: 30px;
-  }
-  .service2{
-    grid-template-columns: 1fr 1fr;
+      padding: 30px
+    }
 
-  }
-  .service2-image{
-    padding: 30px;
-  }
-  .service2-content h1{
-   font-size: 30px;
-  }
-  .service1{
-    grid-template-columns: 1fr 2fr;
-  }
-  .service2{
-    grid-template-columns: 2fr 1fr;
-  }
-  .service3{
-    grid-template-columns: repeat(4,1fr);
-  }
+    .service-content h1 {
+      font-size: 30px;
+    }
 
-    </style>
+    .service2 {
+      grid-template-columns: 1fr 1fr;
+
+    }
+
+    .service2-image {
+      padding: 30px;
+    }
+
+    .service2-content h1 {
+      font-size: 30px;
+    }
+
+    .service1 {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .service2 {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    .service3 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  </style>
 </head>
+
 <body>
-    <header>
+  <header>
     <div class="header-content">
-        <h1 class="heaader-title">Welcome to Website</h1>
-      
-      <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facilis a aut consequatur harum ratione veritatis iure similique ipsam eos.</p>
-       <button class="btn btn-main">get started</button>
-    <button class="btn btn-outline">explore</button>
+      <h1 class="heaader-title">Welcome to Website</h1>
+
+      <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facilis a aut
+        consequatur harum ratione veritatis iure similique ipsam eos.</p>
+      <button class="btn btn-main">get started</button>
+      <button class="btn btn-outline">explore</button>
     </div>
-    </header>
+  </header>
 
-    <main> 
-      <article>
+  <main>
+    <article>
 
 
-        <section class="section-features">
+      <section class="section-features">
         <h2 class="section-title">our features</h2>
-       <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sit nostrum provident, laboriosam illo tempora!</p>
+        <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sit nostrum
+          provident, laboriosam illo tempora!</p>
         <div class="card-container">
-            <div class="card">
-                <i class="fa-solid fa-rocket fa-6x"></i>
-                <h3>card title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus quibusdam labore magnam distinctio rem alias non porro fugit nam expedita quia maiores sapiente, facere deserunt explicabo omnis eum voluptatum?
+          <div class="card">
+            <i class="fa-solid fa-rocket fa-6x"></i>
+            <h3>card title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus quibusdam labore magnam
+              distinctio rem alias non porro fugit nam expedita quia maiores sapiente, facere deserunt explicabo omnis
+              eum voluptatum?
 
-                </p>
+            </p>
 
-            </div>
+          </div>
 
-            <div class="card">
-                <i class="fa-solid fa-rocket fa-6x"></i>
-                <h3>card title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus quibusdam labore magnam distinctio rem alias non porro fugit nam expedita quia maiores sapiente, facere deserunt explicabo omnis eum voluptatum?
+          <div class="card">
+            <i class="fa-solid fa-rocket fa-6x"></i>
+            <h3>card title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus quibusdam labore magnam
+              distinctio rem alias non porro fugit nam expedita quia maiores sapiente, facere deserunt explicabo omnis
+              eum voluptatum?
 
-                </p>
+            </p>
 
-            </div>
+          </div>
 
-            <div class="card">
-                <i class="fa-solid fa-rocket fa-6x"></i>
-                <h3>card title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus quibusdam labore magnam distinctio rem alias non porro fugit nam expedita quia maiores sapiente, facere deserunt explicabo omnis eum voluptatum?
+          <div class="card">
+            <i class="fa-solid fa-rocket fa-6x"></i>
+            <h3>card title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus quibusdam labore magnam
+              distinctio rem alias non porro fugit nam expedita quia maiores sapiente, facere deserunt explicabo omnis
+              eum voluptatum?
 
-                </p>
+            </p>
 
-            </div>
+          </div>
 
 
-        </div>    
-    </section>
-    <section class="section-services">
+        </div>
+      </section>
+      <section class="section-services">
 
         <div class="service service1">
-           <div class="service-image">
+          <div class="service-image">
             <img src="undraw_Mobile_payments_re_7udl.png" style="width: 100%;">
-           </div>
-           <div class="service-content">
+          </div>
+          <div class="service-content">
             <h1>first service title</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi quidem. Blanditiis fuga cum debitis!</p>
-              <button class="btn btn-main"> Read more</button> 
-        </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi quidem. Blanditiis fuga cum
+              debitis!</p>
+            <button class="btn btn-main"> Read more</button>
+          </div>
         </div>
 
-    </section>
-    <section class="section-services">
+      </section>
+      <section class="section-services">
 
         <div class="service service2">
-           <div class="service2-content">
+          <div class="service2-content">
             <h1>Second service title</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi quidem. Blanditiis fuga cum debitis!</p>
-              <button class="btn btn-main"> Read more</button> 
-           </div>
-           <div class="service2-image"></div>>
-           
-              <img src="undraw_Stripe_payments_re_chlm.png" style="width: 0%;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi quidem. Blanditiis fuga cum
+              debitis!</p>
+            <button class="btn btn-main"> Read more</button>
+          </div>
+          <div class="service2-image"></div>>
+
+          <img src="undraw_Stripe_payments_re_chlm.png" style="width: 0%;">
         </div>
         <div class="service service3">
-            <div class="service3-image">
-             <img src="undraw_Mobile_payments_re_7udl.png" style="width: 100%;">
-            </div>
-            <div class="service3-content">
-             <h1>first service title</h1>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi quidem. Blanditiis fuga cum debitis!</p>
-               <button class="btn btn-main"> Read more</button> 
-         </div>
-         </div>
+          <div class="service3-image">
+            <img src="undraw_Mobile_payments_re_7udl.png" style="width: 100%;">
+          </div>
+          
+        </div>
         </div>
 
-    </section>
-      </article>
-    </main>
+      </section>
+    </article>
+  </main>
 
-   <footer class="footer">
-     <div class="container">
-       <div class="row">
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
         <div class="footer-col">
-           <h4>company</h4>
-           <ul>
+          <h4>company</h4>
+          <ul>
             <li> <a href="#">abour us</a></li>
             <li> <a href="#">privacy policy</a></li>
             <li> <a href="#">our services</a></li>
             <li> <a href="#">afffiliate program</a></li>
-           </ul>
+          </ul>
         </div>
         <div class="footer-col">
-           <h4>get help</h4>
-           <ul>
+          <h4>get help</h4>
+          <ul>
             <li> <a href="#">FAQ</a></li>
             <li> <a href="#">shipping</a></li>
             <li> <a href="#">return </a></li>
             <li> <a href="#">order status</a></li>
             <li> <a href="#">payment option</a></li>
-           </ul>
+          </ul>
         </div>
         <div class="footer-col">
-           <h4>online shop</h4>
-           <ul>
+          <h4>online shop</h4>
+          <ul>
             <li> <a href="#">watch</a></li>
             <li> <a href="#">bag</a></li>
             <li> <a href="#">shoes</a></li>
             <li> <a href="#">dress</a></li>
-           </ul>
+          </ul>
         </div>
         <div class="footer-col">
-           <h4>follow us</h4>
-           <div class="social-links">
+          <h4>follow us</h4>
+          <div class="social-links">
             <a href=""><i class="fab fa-facebook-f"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
             <a href=""><i class="fab fa-instagram"></i></a>
             <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
-        </div>
 
-       </div>
-     </div>
+      </div>
+    </div>
 
 
-   </footer>
+  </footer>
 </body>
+
 </html>
